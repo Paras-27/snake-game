@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: calc(1em + .3vh);
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1em;
+  margin: 3em 0em;
+}
+
+h1 {
+  font-size: 1.3em;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  overscroll-behavior: none;
+}
+
+#board {
+  height: 88vw;
+  width: 88vw;
+
+  max-width: 500px;
+  max-height: 500px;
+
+  border: 1px solid white;
+  position: relative;
+}
+
+#timer, #score, #highScore {
+  color: white;
+}
+
+.snakeSquare, #apple {
+  display: block;
+  width: 4%;
+  height: 4%;
+  position: absolute;
+  user-select: none;
+}
+
+.snakeSquare {
+  background-color: green;
+  z-index: 2;
+}
+
+#snake-head {
+  background-color: darkgreen;
+}
+
+#apple {
+  background-color: red;
+  z-index: 1;
+}
